@@ -1,0 +1,258 @@
+
+
+:root{
+    --main-color:#ffb43a;
+    --hover-color: hsl(37, 94%, 57%);
+    --body-color:#1e1e2a;
+    --container-color:#2d2e37;
+    --text-color:#fcfeff;
+}
+
+h5{
+    color: #ffb43a;
+}
+.box {
+    border: 1px solid var(--hover-color);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px; /* Adjust this value based on your design */
+}
+
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    flex-direction: column;
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+header{
+    width: max-content;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--container-color);
+    color: #fcfeff;
+    row-gap: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    gap: 40px;
+    padding-top: 20px;
+    
+}
+
+.top-nav h3{
+    font-size: 2rem;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+
+.top-nav h2 span{
+    background: var(--main-color);
+    padding: 1px 1px;
+    border-radius: 1px;
+    font-size: 20px;
+    height: auto;
+}
+
+.top-nav input{
+      height: 50px;
+      width: 56%;
+      padding-left: 20px;
+      font-family: 800;
+      outline: none;
+      border-radius: 20px;
+      border-color: var(--main-color);
+      outline: none;
+      border: none;
+      background: var(--body-color);
+      color: white;
+}
+
+.top-nav #tv {
+    cursor: pointer;
+    margin-right: 10px;
+}
+nav{
+
+}
+ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    margin: 0 10px;
+}
+
+li{
+    display: block;
+    height: 40px;
+    font-weight: bold;
+    width: auto;
+    letter-spacing: 2px;
+}
+ 
+.active:hover,
+.nav-active{
+    transition: o.3s all linear;
+    cursor: pointer;
+    color: aqua;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    background: var(--body-color);
+}
+
+.box{
+    min-height: 50%;
+    border-radius: 10px;
+}
+
+.box .moviesDetails{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.leftDetails{
+    font-family: 'Poppins', sans-serif;
+    width: 140px;
+    padding-left: 15px;
+}
+
+.leftDetails h5, .leftDetails p{
+    text-align: left;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+hr{
+    margin: 10px 0;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+footer div ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    width: 100%;
+}
+
+.bx-menu{
+    visibility: hidden;
+}
+
+
+
+@media(max-width: 800px){
+    body{
+        background-color: #1e1e2a;
+        color: white;
+    }
+    header{
+        background: var(--container-color);
+    }
+    header nav{
+        display: none;
+    }
+    .top-nav{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .bottomHeader{
+        position: absolute;
+        right: 50px;
+        top: 10px;
+    }
+    .top-nav input{
+        width: 56%;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px 0;
+    }
+    img{
+        border: 1px solid white;
+    }
+    
+    .bx-menu{
+        visibility: visible;
+        position: absolute;
+        top: 26px;
+        right: 12px;
+        font-size: 26px;
+         height: 30px;
+         width: 30px;
+    }
+    .show{
+        display: block;
+        background: var(--body-color);
+        color: #fcfeff;
+        border-radius: 5px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 570px){
+    footer div ul {
+        display: block;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+
+}
+
+
